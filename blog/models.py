@@ -3,6 +3,7 @@ from django.utils import timezone
 
 # Create your models here.
 
+# Este modelo es llamado en .views para crear la plantilla
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
